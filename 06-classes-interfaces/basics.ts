@@ -16,11 +16,11 @@
 //   }
 // }
 // TS Shortcut: Adding scope to constructor parameters automatically creates the class properties
-class User {
+class User1 {
   constructor(public name: string, private age: number) { // Protected is like private, but inherriting classes can also access it.
     // No need to assign the parameters to variables here. It's done automatically.
   }
 }
 
-let newUser = new User('Max', 39);
-const bob = new User('Bob', 45);
+let newUser = new User1('Max', 39);
+const bob = new User1('Bob', 45);

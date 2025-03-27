@@ -15,7 +15,7 @@
 //   }
 // }
 // TS Shortcut: Adding scope to constructor parameters automatically creates the class properties
-class User {
+class User1 {
     name;
     age;
     constructor(name, age) {
@@ -24,5 +24,5 @@ class User {
         // No need to assign the parameters to variables here. It's done automatically.
     }
 }
-let newUser = new User('Max', 39);
-const bob = new User('Bob', 45);
+let newUser = new User1('Max', 39);
+const bob = new User1('Bob', 45);
