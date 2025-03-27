@@ -46,3 +46,19 @@ class Employee extends User {
     // this._firstName = 'Bob' // This doesn't work because _firstName needs to be protected instead of private.
   }
 }
+
+abstract class UIElement {
+  constructor(public identifier: string) {}
+
+  clone(targetLocation: string) {
+    // Logic to duplicate the UI element
+  }
+}
+
+class SideDrawerElement extends UIElement {
+  constructor(public identifier: string, public position: 'left' | 'right') {
+    super(identifier);
+  }
+}
+
+let steve = new SideDrawerElement('bob', 'left');

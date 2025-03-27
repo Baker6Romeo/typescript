@@ -34,3 +34,22 @@ max.firstName = 'Max';
 max.lastName = 'Schwartzmuller';
 console.log(max.fullName);
 console.log(max);
+class Employee extends User {
+    jobTitle;
+    constructor(jobTitle) {
+        super();
+        this.jobTitle = jobTitle;
+    }
+    work() {
+        // this._firstName = 'Bob' // This doesn't work because _firstName needs to be protected instead of private.
+    }
+}
+class UIElement {
+    identifier;
+    constructor(identifier) {
+        this.identifier = identifier;
+    }
+    clone(targetLocation) {
+        // Logic to duplicate the UI element
+    }
+}
