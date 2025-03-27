@@ -25,8 +25,12 @@ class User {
     get fullName() {
         return `${this._firstName} ${this._lastName}`;
     }
+    // Static properties
+    static eid = 'USER';
 }
+console.log(User.eid);
 const max = new User();
 max.firstName = 'Max';
 max.lastName = 'Schwartzmuller';
 console.log(max.fullName);
+console.log(max);
